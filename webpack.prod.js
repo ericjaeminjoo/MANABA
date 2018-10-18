@@ -5,14 +5,19 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
-    devtool: 'source-map',
-    entry: './src/index.js',
+    devtool: "source-map",
+    entry: {
+        home: "./src/home-page/home.js",
+        about: "./src/about-page/about.js",
+        contact: "./src/contact-page/contact.js"
+    },
     output: {
-        filename: '[name].[hash:20].js',
+        filename: "[name].[hash:20].js",
         path: buildPath
     },
     module: {
@@ -20,10 +25,10 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
+                loader: "babel-loader",
 
                 options: {
-                    presets: ['env']
+                    presets: ["env"]
                 }
             },
             {
@@ -32,39 +37,39 @@ module.exports = {
                     use: [
                         {
                             // translates CSS into CommonJS
-                            loader: 'css-loader',
+                            loader: "css-loader",
                             options: {
                                 sourceMap: true
                             }
                         },
                         {
                             // Runs compiled CSS through postcss for vendor prefixing
-                            loader: 'postcss-loader',
+                            loader: "postcss-loader",
                             options: {
                                 sourceMap: true
                             }
                         },
                         {
                             // compiles Sass to CSS
-                            loader: 'sass-loader',
+                            loader: "sass-loader",
                             options: {
-                                outputStyle: 'expanded',
+                                outputStyle: "expanded",
                                 sourceMap: true,
                                 sourceMapContents: true
                             }
                         }
                     ],
-                    fallback: 'style-loader'
-                }),
+                    fallback: "style-loader"
+                })
             },
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
-                        loader: 'url-loader',
+                        loader: "url-loader",
                         options: {
-                            name: '[name].[hash:20].[ext]',
+                            name: "[name].[hash:20].[ext]",
                             limit: 8192
                         }
                     }
@@ -74,48 +79,32 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
-            // Inject the js bundle at the end of the body of the given template
-            inject: 'body',
+            template: "./src/home-page/home.html",
+            inject: "body",
+            chunks: ["home"],
+            filename: "home.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/about-page/about.html",
+            inject: "body",
+            chunks: ["about"],
+            filename: "about.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/contact-page/contact.html",
+            inject: "body",
+            chunks: ["contact"],
+            filename: "contact.html"
+        }),
+        new ExtractTextPlugin("styles.[md5:contenthash:hex:20].css", {
+            allChunks: "true"
         }),
         new CleanWebpackPlugin(buildPath),
-        new FaviconsWebpackPlugin({
-            // Your source logo
-            logo: './src/assets/icon.png',
-            // The prefix for all image files (might be a folder or a name)
-            prefix: 'icons-[hash]/',
-            // Generate a cache file with control hashes and
-            // don't rebuild the favicons until those hashes change
-            persistentCache: true,
-            // Inject the html into the html-webpack-plugin
-            inject: true,
-            // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
-            background: '#fff',
-            // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-            title: 'MANABA}}',
-
-            // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
-            icons: {
-                android: true,
-                appleIcon: true,
-                appleStartup: true,
-                coast: false,
-                favicons: true,
-                firefox: true,
-                opengraph: false,
-                twitter: false,
-                yandex: false,
-                windows: false
-            }
-        }),
-        new ExtractTextPlugin('styles.[md5:contenthash:hex:20].css', {
-            allChunks: true
-        }),
         new OptimizeCssAssetsPlugin({
-            cssProcessor: require('cssnano'),
+            cssProcessor: require("cssnano"),
             cssProcessorOptions: {
                 map: {
-                    inline: false,
+                    inline: false
                 },
                 discardComments: {
                     removeAll: true
@@ -123,5 +112,16 @@ module.exports = {
             },
             canPrint: true
         })
-    ]
+    ],
+    // https://webpack.js.org/configuration/optimization/
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true,
+                sourceMap: true
+            }),
+            new OptimizeCssAssetsPlugin({})
+        ]
+    }
 };
