@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     devtool: 'eval-cheap-module-source-map',
     entry: {
-        home: './src/home-page/home.js',
+        index: './src/home-page/home.js',
         about: './src/about-page/about.js',
         contact: './src/contact-page/contact.js'
     },
@@ -73,8 +73,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/home-page/home.html',
             inject: true,
-            chunks: ['home'],
-            filename: 'home.html'
+            chunks: ['index'],
+            filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/about-page/about.html',

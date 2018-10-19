@@ -12,7 +12,7 @@ const buildPath = path.resolve(__dirname, 'dist');
 module.exports = {
     devtool: "source-map",
     entry: {
-        home: "./src/home-page/home.js",
+        index: "./src/home-page/home.js",
         about: "./src/about-page/about.js",
         contact: "./src/contact-page/contact.js"
     },
@@ -81,8 +81,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/home-page/home.html",
             inject: "body",
-            chunks: ["home"],
-            filename: "home.html"
+            chunks: ["index"],
+            filename: "index.html"
         }),
         new HtmlWebpackPlugin({
             template: "./src/about-page/about.html",
