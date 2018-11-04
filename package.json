@@ -13,7 +13,9 @@
         "type": "git",
         "url": "git+https://github.com/JJMin/MANABA"
     },
-    "keywords": ["MANABA"],
+    "keywords": [
+        "MANABA"
+    ],
     "author": "Eric Jae-Min Joo",
     "license": "ISC",
     "bugs": {
@@ -28,6 +30,7 @@
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.7.0",
+        "bulma": "^0.7.2",
         "clean-webpack-plugin": "^0.1.19",
         "css-loader": "^0.28.11",
         "cssnano": "^3.10.0",

@@ -1,3 +1,25 @@
-h1 {
-    color: pink;
+@charset "utf-8";
+
+// Set your brand colors
+$charcoal: #1A1919;
+
+// Custom CSS
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+// Update some of Bulma's component variables
+$body-background-color: $charcoal;
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/form.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
