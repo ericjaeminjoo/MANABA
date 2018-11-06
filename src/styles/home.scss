@@ -1,7 +1,15 @@
 @charset "utf-8";
 
-// Set your brand colors
-$charcoal: #1A1919;
+// Import Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// MANABA Brand Color
+$main_color: #1A1919;
+$sub_color: #ffd30f;
+
+// Update some of Bulma's component variables
+$family-sans-serif: "Nunito", sans-serif;
+$body-background-color: $main_color;
 
 // Custom CSS
 .center {
@@ -10,8 +18,9 @@ $charcoal: #1A1919;
     align-items: center;
 }
 
+// Arrow-down CSS
 #arrow-down {
-    color: #fff;
+    color: $sub_color;
     margin-bottom: 40px;
 }
 .bounce {
@@ -68,16 +77,17 @@ $charcoal: #1A1919;
   }
 }
 
-// Update some of Bulma's component variables
-$body-background-color: $charcoal;
-
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/_all.sass";
-@import "../../node_modules/bulma/sass/elements/button.sass";
 @import "../../node_modules/bulma/sass/elements/container.sass";
-@import "../../node_modules/bulma/sass/elements/form.sass";
 @import "../../node_modules/bulma/sass/elements/title.sass";
 @import "../../node_modules/bulma/sass/components/navbar.sass";
-@import "../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../node_modules/bulma/sass/layout/section.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/grid/tiles.sass";
+@import "../../node_modules/bulma-utilities/sass/bulma-utilities.sass";
+
+// Import Hover.css package
+@import "../../node_modules/hover.css/scss/hover.scss";
