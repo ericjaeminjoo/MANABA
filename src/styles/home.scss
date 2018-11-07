@@ -106,7 +106,15 @@ figcaption {
 #snapchat-icon {
     color: $snapchat-color;
 }
-
+// Footer background color
+footer {
+    background-color: $main-color;
+    color: #fff;
+    font-size: 13px;
+    #heart-icon {
+        color: $instagram-color;
+    }
+}
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
