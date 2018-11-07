@@ -4,13 +4,19 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // MANABA Brand Color
-$main_color: #1A1919;
-$sub_color: #f7d549;
-$fig_color: #454343;
+$main-color: #1A1919;
+$sub-color: #f7d549;
+$fig-color: #454343;
+$facebook-color: #3b5999;
+$instagram-color: #e4405f;
+$snapchat-color: #ffef15;
 
 // Update some of Bulma's component variables
 $family-sans-serif: "Nunito", sans-serif;
-$body-background-color: $main_color;
+$body-background-color: $main-color;
+$link: $facebook-color;
+$danger: $instagram-color;
+$warning: $snapchat-color;
 
 // Global Custom CSS
 .center {
@@ -24,7 +30,7 @@ $body-background-color: $main_color;
 
 // Arrow-down CSS
 #arrow-down {
-    color: $sub_color;
+    color: $sub-color;
     margin-bottom: 40px;
 }
 .bounce {
@@ -80,13 +86,9 @@ $body-background-color: $main_color;
     transform: translateY(-15px);
   }
 }
-// Image Tiles
-#image-tiles {
-    margin-top: 26px;
-}
 // Image figure caption CSS
 figcaption {
-    color: $fig_color;
+    color: $fig-color;
     letter-spacing: 0.7px;
 }
 // Tag container CSS to center tags
@@ -94,6 +96,17 @@ figcaption {
     display: flex;
     justify-content: center;
 }
+// Social media icon colors
+#facebook-icon {
+    color: $facebook-color;
+}
+#instagram-icon {
+    color: $instagram-color;
+}
+#snapchat-icon {
+    color: $snapchat-color;
+}
+
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
