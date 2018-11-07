@@ -3,11 +3,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    devtool: 'eval-cheap-module-source-map',
+    devtool: "eval-cheap-module-source-map",
     entry: {
-        index: './src/home-page/home.js',
-        about: './src/about-page/about.js',
-        contact: './src/contact-page/contact.js'
+        index: "./src/home-page/home.js",
+        about: "./src/about-page/about.js",
+        contact: "./src/contact-page/contact.js"
     },
     devServer: {
         port: 8080,
@@ -18,9 +18,9 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
+                loader: "babel-loader",
                 options: {
-                    presets: ['env']
+                    presets: ["env"]
                 }
             },
             {
@@ -44,49 +44,48 @@ module.exports = {
                         // compiles Sass to CSS
                         loader: "sass-loader",
                         options: {
-                            outputStyle: 'expanded',
+                            outputStyle: "expanded",
                             sourceMap: true,
                             sourceMapContents: true
                         }
                     }
                     // Please note we are not running postcss here
                 ]
-            }
-            ,
+            },
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
-                        loader: 'url-loader',
+                        loader: "url-loader",
                         options: {
                             // On development we want to see where the file is coming from, hence we preserve the [path]
-                            name: '[path][name].[ext]?hash=[hash:20]',
+                            name: "[path][name].[ext]?hash=[hash:20]",
                             limit: 8192
                         }
                     }
                 ]
             }
-        ],
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/home-page/home.html',
+            template: "./src/home-page/home.html",
             inject: true,
-            chunks: ['index'],
-            filename: 'index.html'
+            chunks: ["index"],
+            filename: "index.html"
         }),
         new HtmlWebpackPlugin({
-            template: './src/about-page/about.html',
+            template: "./src/about-page/about.html",
             inject: true,
-            chunks: ['about'],
-            filename: 'about.html'
+            chunks: ["about"],
+            filename: "about.html"
         }),
         new HtmlWebpackPlugin({
-            template: './src/contact-page/contact.html',
+            template: "./src/contact-page/contact.html",
             inject: true,
-            chunks: ['contact'],
-            filename: 'contact.html'
+            chunks: ["contact"],
+            filename: "contact.html"
         })
     ]
 };

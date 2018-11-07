@@ -6,7 +6,3 @@ require("../styles/home.scss");
 //         $("#arrow-down").css("opacity", 1 - $(window).scrollTop() / 250);
 //     });
 // });
-
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentLoaded", "page-index")
-});
