@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MANABA - Main Page</title>
 </head>
+
 <body>
     <section class="hero is-fullheight">
         <div class="hero-body">
@@ -22,30 +24,33 @@
     <section class="hero is-light is-fullheight">
         <div class="hero-body">
             <div class="container">
-                <div class="columns has-margin-4">
+                <div class="columns">
                     <div class="column is-one-quarter">
                         <h1 class="is-size-3 is-spaced">
-                            Who <strong>exactly</strong>
+                            who the <strong><span class="shadow">heck</span></strong>
                             </br>
                             are we?
                         </h1>
                     </div>
                     <div class="column">
                         <h2 class="subtitle is-5">
-                            McGill Association of North American Born Asians, more commonly known as <strong><span style="color: #f7d549">MANABA</span></strong>, is a non-profit, student-run
-                            organization based at McGill University in Montreal, Canada. Beyond representing the fusion of Asian and North-American
-                            culture, MANABA celebrates people of all ethnicities and backgrounds. Through events, MANABA hopes to bring the young
+                            McGill Association of North American Born Asians, more commonly known as <strong><span
+                                    class="shadow">MANABA</span></strong>, is a non-profit, student-run
+                            organization based at McGill University in Montreal, Canada. Beyond representing the fusion
+                            of Asian and North-American
+                            culture, MANABA celebrates people of all ethnicities and backgrounds. Through events,
+                            MANABA hopes to bring the young
                             and lively Montreal community together.
                         </h2>
                     </div>
                 </div>
-                <div class="tile is-ancestor has-margin-t-2">
+                <div class="tile is-ancestor">
                     <div class="tile is-parent">
                         <div class="tile is-child hvr-bob hvr-icon-forward">
                             <figure class="image">
                                 <img src="<%= require('../assets/upcoming-events.png') %>" alt="Upcoming Event Photo">
                                 <figcaption class="is-size-6 has-text-weight-bold">
-                                    UPCOMING EVENTS <i class="fas fa-long-arrow-alt-right hvr-icon"></i>
+                                    <span class="shadow">UPCOMING EVENTS</span> <i class="fas fa-long-arrow-alt-right hvr-icon"></i>
                                 </figcaption>
                             </figure>
                         </div>
@@ -55,7 +60,7 @@
                             <figure class="image">
                                 <img src="<%= require('../assets/meet-our-team.png') %>" alt="Meet Our Team Photo">
                                 <figcaption class="is-size-6 has-text-weight-bold">
-                                    MEET OUR TEAM <i class="fas fa-long-arrow-alt-right hvr-icon"></i>
+                                    <span class="shadow">MEET OUR 2018/2019 TEAM</span> <i class="fas fa-long-arrow-alt-right hvr-icon"></i>
                                 </figcaption>
                             </figure>
                         </div>
@@ -65,7 +70,42 @@
         </div>
     </section>
 
-    <section class="hero is-light is-medium">
+    <section class="hero is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="is-divider"></div>
+                <nav id="number-level" class="level">
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <p class="heading is-size-5">members</p>
+                            <p class="title">3,047</p>
+                        </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <p class="heading is-size-5">events</p>
+                            <p class="title">192</p>
+                        </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <p class="heading is-size-5">sponsors</p>
+                            <p class="title">74</p>
+                        </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <p class="heading is-size-5">execs</p>
+                            <p class="title">21</p>
+                        </div>
+                    </div>
+                </nav>
+                <div class="is-divider"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-light">
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
@@ -80,8 +120,18 @@
                         </figure>
                     </div>
                     <div class="column is-half">
-                        <h2 class="title">By purchasing our membership card for $5, you get...</h2>
-                        <p class="subtitle">Lorem Ipsum</p>
+                        <h1 class="is-size-3 is-spaced">the membership card <strong><span class="shadow">perks</span></strong></h1>
+                        <p class="subtitle is-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at risus
+                            consequat, bibendum augue nec, luctus velit. Donec
+                            accumsan nisl turpis, vitae accumsan risus pretium et. Curabitur sagittis elit at nisi
+                            feugiat eleifend. Vivamus mi
+                            mauris, ultrices viverra nibh in, dignissim posuere metus. Sed felis sapien, gravida eu
+                            risus a, pulvinar porta odio.
+                            Sed risus mi, aliquet a mollis id, egestas ac magna. Duis venenatis leo eget mi suscipit,
+                            at vulputate enim cursus.
+                            Vestibulum malesuada ultrices turpis, vitae sagittis quam pretium et. Nam et convallis
+                            nulla. Suspendisse ac odio eu
+                            risus aliquam blandit.</p>
                     </div>
                 </div>
             </div>
@@ -90,4 +140,5 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </body>
+
 </html>
