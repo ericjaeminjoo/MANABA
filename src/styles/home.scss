@@ -35,6 +35,8 @@ $use-fadeInDown: true;
     box-shadow: inset 0 -6px 0 rgba(247, 213, 73, 0.5);
 }
 
+// Navbar CSS
+
 // Arrow-down CSS
 #arrow-down {
     color: $sub-color;
@@ -136,6 +138,7 @@ footer {
 @import "../../node_modules/bulma-divider/src/sass/index.sass";
 @import "../../node_modules/bulma/sass/components/level.sass";
 @import "../../node_modules/bulma/sass/elements/tag.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
 
 // Import Hover.css package
 @import "../../node_modules/hover.css/scss/hover.scss";
