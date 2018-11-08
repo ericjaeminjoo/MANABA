@@ -18,6 +18,13 @@ $link: $facebook-color;
 $danger: $instagram-color;
 $warning: $snapchat-color;
 
+// Animations
+$use-fadeIn: true;
+$use-fadeInUp: true;
+$use-fadeInLeft: true;
+$use-fadeInUp: true;
+$use-fadeInDown: true;
+
 // Global Custom CSS
 .center {
     display: flex;
@@ -33,12 +40,12 @@ $warning: $snapchat-color;
     color: $sub-color;
     margin-bottom: 40px;
 }
-.bounce {
-	-moz-animation: bounce 3s infinite;
-	-webkit-animation: bounce 3s infinite;
-	animation: bounce 3s infinite;
+.arrow-bounce {
+	-moz-animation: arrow-bounce 3s infinite;
+	-webkit-animation: arrow-bounce 3s infinite;
+	animation: arrow-bounce 3s infinite;
 }
-@-moz-keyframes bounce {
+@-moz-keyframes arrow-bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
@@ -52,7 +59,7 @@ $warning: $snapchat-color;
     transform: translateY(-15px);
   }
 }
-@-webkit-keyframes bounce {
+@-webkit-keyframes arrow-bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -66,7 +73,7 @@ $warning: $snapchat-color;
     transform: translateY(-15px);
   }
 }
-@keyframes bounce {
+@keyframes arrow-bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
