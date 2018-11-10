@@ -132,7 +132,7 @@
                         <img src="<%= require('../assets/carousel-6.png') %>" alt="Upcoming Event Photo">
                     </div>
                 </div>
-                <p class="subtitle m-t-md wow fadeIn" data-wow-offset="100">be sure to <a href="#social-media" class="smooth-scroll"><span class="shadow"><strong>follow us</strong></span></a> on our social media outlets to get the latest news about our events!</p>
+                <p class="subtitle m-t-md wow fadeIn" data-wow-offset="100">be sure to <a href="#social-media" class="smooth-scroll"><strong>follow us</strong></a> on our social media outlets to get the latest news about our events!</p>
             </div>
         </div>
     </section>
@@ -173,7 +173,7 @@
 
     <section id="social-media" class="hero is-light is-small">
         <div class="hero-body">
-            <div class="container wow fadeInUp" data-wow-offset="185">
+            <div class="container wow fadeInUp" data-wow-offset="275">
                 <div class="is-divider"></div>
                 <div class="columns p-t-lg p-b-lg">
                     <div class="column has-text-centered">
@@ -222,14 +222,14 @@
         </div>
     </section>
 
-    <section class="hero is-small is-light">
+    <section id="FAQ" class="hero is-small is-light">
         <div class="hero-body">
             <div class="container">
                 <h2 class="title has-text-centered p-b-sm">
                     have any <span class="shadow">questions</span> for us?
                 </h2>
                 <p class="subtitle has-text-centered">
-                    here are some of the frequently asked questions we are asked
+                    here are some of the most frequently asked questions we are asked
                 </p>
                 <section class="accordions m-b-xl">
                     <article class="accordion is-active is-dark">
@@ -280,6 +280,10 @@
             </div>
         </div>
     </section>
+
+    <a href="#home" id="back-to-top" class="smooth-scroll">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
     <%= require('html-loader!../partials/footer.html') %>
 

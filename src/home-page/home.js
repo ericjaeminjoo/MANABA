@@ -12,6 +12,11 @@ $(document).ready(function () {
     // Arrow down decrease opacity as user scrolls down
     $(window).scroll(function () {
         $("#arrow-down").css("opacity", 1 - $(window).scrollTop() / 650);
+        if ($(this).scrollTop() < 65) {
+            $("#back-to-top").fadeOut();
+        } else {
+            $("#back-to-top").fadeIn();
+        }
     });
 
     // accordions now contains an array of all Accordion instances
