@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+// Import Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// MANABA Brand Color
+$main-color: #1A1919;
+$sub-color: #f7d549;
+$fig-color: #454343;
+$facebook-color: #3b5999;
+$instagram-color: #e4405f;
+$snapchat-color: #ffef15;
+
+// Update some of Bulma's component variables
+$family-sans-serif: "Nunito", sans-serif;
+$body-background-color: $main-color;
+$link: $facebook-color;
+$danger: $instagram-color;
+$warning: $snapchat-color;
+
+// Animations
+$use-fadeIn: true;
+$use-fadeInUp: true;
+$use-fadeInLeft: true;
+$use-fadeInUp: true;
+$use-fadeInDown: true;
+
+// Global Custom CSS
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shadow {
+    box-shadow: inset 0 -6px 0 rgba(247, 213, 73, 0.5);
+}
+
+// Navbar CSS
+.navbar-menu a {
+    letter-spacing: 0.7px;
+}
+.navbar-menu a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: $sub-color;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform 0.15s ease-out;
+}
+.navbar-menu a:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+// Footer background color
+footer {
+    background-color: $main-color;
+    color: #fff;
+    font-size: 13px;
+    #heart-icon {
+        color: $instagram-color;
+    }
+}
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma-divider/src/sass/index.sass";
+@import "../../node_modules/bulma/sass/components/level.sass";
+@import "../../node_modules/bulma/sass/elements/tag.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+
+// Import Hover.css package
+@import "../../node_modules/hover.css/scss/hover.scss";

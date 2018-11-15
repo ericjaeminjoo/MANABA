@@ -152,9 +152,8 @@ footer {
 	padding: 2px 13px;
 	border-radius: 0;
 	display: none;
-	color: $main-color;
-    border-color: $main-color;
-    background-color: whitesmoke;
+	color: whitesmoke;
+    background-color: #454343;
 	border-width: 2px;
     border: 2px solid $main-color;
 	-webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
@@ -163,7 +162,7 @@ footer {
 
 #back-to-top:hover,
 #back-to-top:active {
-	color: #fff;
+	color: whitesmoke;
 	background-color: $main-color;
 }
 
