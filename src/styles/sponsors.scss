@@ -57,7 +57,7 @@ $use-fadeInDown: true;
     right: 0;
     left: 0;
     background: rgba(14, 14, 17, 0.9);
-    cursor: zoom-in;
+    cursor: grab;
     opacity: 0;
     transition: all 0.4s ease;
 }
@@ -147,6 +147,28 @@ footer {
     #heart-icon {
         color: $instagram-color;
     }
+}
+
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 23px;
+	font-size: 22px;
+	padding: 2px 13px;
+	border-radius: 0;
+	display: none;
+	color: whitesmoke;
+    background-color: #454343;
+	border-width: 2px;
+    border: 2px solid $main-color;
+	-webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+	transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+#back-to-top:hover,
+#back-to-top:active {
+	color: whitesmoke;
+	background-color: $main-color;
 }
 
 // Import only what you need from Bulma

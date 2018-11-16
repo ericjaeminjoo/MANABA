@@ -14,7 +14,10 @@ module.exports = {
     entry: {
         index: "./src/home-page/home.js",
         about: "./src/about-page/about.js",
-        contact: "./src/contact-page/contact.js"
+        contact: "./src/contact-page/contact.js",
+        events: "./src/events-page/events.js",
+        team: "./src/team-page/team.js",
+        sponsors: "./src/sponsors-page/sponsors.js"
     },
     output: {
         filename: "[name].[hash:20].js",
@@ -95,6 +98,24 @@ module.exports = {
             inject: "body",
             chunks: ["contact"],
             filename: "contact.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/events-page/events.html",
+            inject: true,
+            chunks: ["events"],
+            filename: "events.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/team-page/team.html",
+            inject: true,
+            chunks: ["team"],
+            filename: "team.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/sponsors-page/sponsors.html",
+            inject: true,
+            chunks: ["sponsors"],
+            filename: "sponsors.html"
         }),
         new ExtractTextPlugin("styles.[md5:contenthash:hex:20].css", {
             allChunks: "true"

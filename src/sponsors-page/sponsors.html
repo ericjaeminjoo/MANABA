@@ -13,9 +13,12 @@
 
         <div class="hero-body">
             <div class="container is-fluid">
-                <h1>
-                    sponsor list here
+                <h1 class="is-size-3 m-b-sm">
+                    welcome to our <strong><span class="shadow">sponsors</span></strong>
                 </h1>
+                <p class="subtitle">
+                    by purchasing our membership card, you get access to discounts from our sponsors
+                </p>
                 <div class="button-group filter-button-group m-t-lg m-b-lg">
                     <button class="button active" data-filter="*"><span>Show All</span></button>
                     <button class="button" data-filter=".cafe"><span>Café</span></button>
@@ -111,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third drinks">
+                    <div class="column element-item is-one-third drinks snacks">
                         <img src="<%= require('../assets/sponsor-images/gazo.png') %>" alt="Upcoming Event Photo">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
@@ -144,7 +147,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third drinks">
+                    <div class="column element-item is-one-third drinks food">
                         <img src="<%= require('../assets/sponsor-images/majesthe.png') %>" alt="Upcoming Event Photo">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
@@ -221,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third food">
+                    <div class="column element-item is-one-third food drinks">
                         <img src="<%= require('../assets/sponsor-images/vua.png') %>" alt="Upcoming Event Photo">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
@@ -234,13 +237,16 @@
                 </div>
             </div>
         </div>
-
-
     </section>
+
+    <a href="#home" id="back-to-top" class="smooth-scroll">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
     <%= require('html-loader!../partials/footer.html') %>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 </body>

@@ -14,4 +14,24 @@ $(window).on('load', function() {
         $('.filter-button-group').find('.active').removeClass('active');
         $(this).addClass('active');
     });
+
+    // Arrow down decrease opacity as user scrolls down
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 65) {
+            $("#back-to-top").fadeOut();
+        } else {
+            $("#back-to-top").fadeIn();
+        }
+    });
+});
+
+// Smooth scrolling
+$(function () {
+    $("a.smooth-scroll").click(function (event) {
+        event.preventDefault();
+        var section = $(this).attr("href");
+        $('html, body').animate({
+            scrollTop: $(section).offset().top
+        }, 1200, "easeInOutExpo");
+    });
 });
