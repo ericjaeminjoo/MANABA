@@ -9,13 +9,38 @@
 
 <body>
     <section id="home" class="hero is-fullheight">
-        <%= require('html-loader!../partials/navbar.html') %>
+        <%= require('html-loader!../partials/navbar_other.html') %>
 
         <div class="hero-body">
             <div class="container">
-                <h1>
-                    meet our 2018/2019 MANABA family
-                </h1>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <img src="<%= require('../assets/upcoming-events.png') %>" alt="Upcoming Event Photo">
+                                </figure>
+                            </div>
+                            <div class="card-content has-text-centered">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">John Smith</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                    <a href="#">#css</a> <a href="#">#responsive</a>
+                                    <br>
+                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
