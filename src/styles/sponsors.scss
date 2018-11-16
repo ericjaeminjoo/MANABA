@@ -50,13 +50,77 @@ $use-fadeInDown: true;
     color: $sub-color;
     border-bottom: 3px solid $sub-color;
 }
+.sponsor-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(14, 14, 17, 0.9);
+    cursor: zoom-in;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sponsor-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    h3 {
+        color: $sub-color;
+        text-transform: uppercase;
+        font-size: 25px;
+        margin: 0;
+        padding: 0 0 10px 0;
+        transform: translateY(-40%);
+        transition: all 0.8s;
+    }
+    span {
+        height: 6px;
+        width: 30px;
+        display: inline-block;
+        border-top: 1px solid whitesmoke;
+        border-bottom: 1px solid whitesmoke;
+        margin: 11px auto 5px auto;
+    }
+    p {
+        color: whitesmoke;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 0 0 0;
+        transform: translateY(40%);
+        transition: all 0.8s;
+    }
+}
+.column {
+    position: relative;
+    overflow: hidden;
+    img {
+        transition: 0.5s ease;
+    }
+}
+.column:hover {
+    img {
+        transform: scale(1.1);
+    }
+    .sponsor-details h3 {
+        transform: translateY(0);
+    }
+    .sponsor-details p {
+        transform: translateY(0);
+    }
+    .sponsor-overlay {
+        opacity: 1;
+    }
+}
 
 // Navbar CSS
 .navbar-menu {
     background-color: $main-color;
-}
-.navbar-menu a {
-    letter-spacing: 0.7px;
+    a {
+        letter-spacing: 0.7px;
+    }
 }
 .navbar-menu a::before {
     content: '';
