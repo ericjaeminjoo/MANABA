@@ -50,7 +50,8 @@ $warning: $snapchat-color;
     transform-origin: left top;
     transform: scale(1, 1);
 }
-// Footer background color
+
+// Footer CSS
 footer {
     background-color: $main-color;
     color: #fff;
@@ -60,6 +61,7 @@ footer {
     }
 }
 
+// Back to top CSS
 #back-to-top {
 	position: fixed;
 	bottom: 20px;
@@ -93,3 +95,4 @@ footer {
 @import "../../node_modules/bulma/sass/elements/container.sass";
 @import "../../node_modules/bulma/sass/grid/_all.sass";
 @import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/components/level.sass";

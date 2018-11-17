@@ -12,14 +12,26 @@
         <%= require('html-loader!../partials/navbar_other.html') %>
 
         <div class="hero-body">
-            <div class="container is-fluid">
-                <h1 class="is-size-3 m-b-sm">
+            <div class="container is-fluid has-text-centered">
+                <h1 class="is-size-3 m-b-lg">
                     welcome to our <strong><span class="shadow">sponsors</span></strong>
                 </h1>
                 <p class="subtitle">
-                    by purchasing our membership card, you get access to discounts from our sponsors
+                    our membership card of 2018-2019 for $5
                 </p>
-                <div class="button-group filter-button-group m-t-lg m-b-lg">
+                <div class="columns is-gapless center">
+                    <figure class="column is-one-quarter image">
+                        <img src="<%= require('../assets/sponsor-images/membership-card-front.png') %>" alt="Membership Card Front Photo">
+                    </figure>
+                    <figure class="column is-one-quarter image">
+                        <img src="<%= require('../assets/sponsor-images/membership-card-back.png') %>" alt="Membership Card Back Photo">
+                    </figure>
+                </div>
+                <p class="subtitle p-b-md">
+                    MANABA’s membership card offers discounts at select Montreal establishments, thanks to our generous sponsors.
+                </p>
+                <div class="is-divider"></div>
+                <div class="button-group filter-button-group m-t-xl m-b-lg">
                     <button class="button active" data-filter="*"><span>Show All</span></button>
                     <button class="button" data-filter=".cafe"><span>Café</span></button>
                     <button class="button" data-filter=".drinks"><span>Drinks</span></button>

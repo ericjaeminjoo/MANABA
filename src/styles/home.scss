@@ -1,3 +1,4 @@
+// home.scss
 @import 'reuseable_styling';
 
 // Animations
@@ -88,7 +89,6 @@ figcaption {
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma-divider/src/sass/index.sass";
-@import "../../node_modules/bulma/sass/components/level.sass";
 @import "../../node_modules/bulma/sass/elements/tag.sass";
 @import "../../node_modules/bulma-accordion/src/sass/index.sass";
 
