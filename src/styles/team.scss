@@ -35,6 +35,11 @@ $use-fadeInDown: true;
     box-shadow: inset 0 -6px 0 rgba(247, 213, 73, 0.5);
 }
 
+// Team CSS
+.card-content {
+    cursor: text;
+}
+
 // Navbar CSS
 .navbar-menu a {
     letter-spacing: 0.7px;
@@ -64,6 +69,28 @@ footer {
     #heart-icon {
         color: $instagram-color;
     }
+}
+
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 23px;
+	font-size: 22px;
+	padding: 2px 13px;
+	border-radius: 0;
+	display: none;
+	color: whitesmoke;
+    background-color: #454343;
+	border-width: 2px;
+    border: 2px solid $main-color;
+	-webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+	transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+#back-to-top:hover,
+#back-to-top:active {
+	color: $main-color;
+	background-color: whitesmoke;
 }
 
 // Import only what you need from Bulma
