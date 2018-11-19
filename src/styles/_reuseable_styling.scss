@@ -28,6 +28,9 @@ $warning: $snapchat-color;
 .shadow {
     box-shadow: inset 0 -6px 0 rgba(247, 213, 73, 0.5);
 }
+.shadow_title {
+    box-shadow: inset 0 -6px 0 rgb(247, 213, 73);
+}
 
 // Navbar CSS
 .navbar-menu a {
@@ -78,13 +81,14 @@ footer {
 	transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 
+// Back to top CSS
 #back-to-top:hover,
 #back-to-top:active {
 	color: whitesmoke;
 	background-color: $main-color;
 }
 
-// Import only what you need from Bulma
+// Import Bulma componenets
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/elements/container.sass";

@@ -71,6 +71,18 @@ figcaption {
     color: $fig-color;
     letter-spacing: 0.7px;
 }
+// Sponsors Button CSS
+#sponsor-btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+    background-color: $main-color;
+    padding: 23px 30px;
+    letter-spacing: 0.1em;
+}
 // Tag container CSS to center tags
 .tag-container {
     display: flex;
@@ -91,7 +103,6 @@ figcaption {
 @import "../../node_modules/bulma-divider/src/sass/index.sass";
 @import "../../node_modules/bulma/sass/elements/tag.sass";
 @import "../../node_modules/bulma-accordion/src/sass/index.sass";
-
 
 // Import Hover.css package
 @import "../../node_modules/hover.css/scss/hover.scss";

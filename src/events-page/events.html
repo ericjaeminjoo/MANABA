@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MANABA - Main Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/tiny-slider.css">
 </head>
 
 <body>
@@ -12,22 +13,61 @@
         <%= require('html-loader!../partials/navbar_other.html') %>
 
         <div class="hero-body">
-            <div class="container">
-                <figure class="image center">
-                    <%= require('html-loader!../assets/manaba-white-tight.svg') %>
-                </figure>
+            <div class="container has-text-centered">
+                <h1 class="title p-b-md">
+                    UPCOMING <span class="shadow_title">EVENTS</span>
+                </h1>
+                <p class="subtitle is-6">
+                    MANABA hosts events such as loft parties, apartment crawls, pool parties, food events, and more to bring the Montreal
+                    community together.
+                </p>
+                <div class="my-slider">
+                    <div>
+                        <figure class="image has-text-centered">
+                            <a href="https://www.facebook.com/events/493927527772013/" alt="Event Link">
+                                <img src="<%= require('../assets/ride-with-the-6ix.png') %>" alt="Upcoming Event Photo">
+                                <figcaption class="is-size-6 p-t-sm">
+                                    Friday, November 23rd, 8 PM - 10:30 PM
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="image has-text-centered">
+                            <a href="https://www.facebook.com/events/334066347401469/" alt="Event Link">
+                                <img src="<%= require('../assets/blizzard-of-oz.png') %>" alt="Upcoming Event Photo">
+                                <figcaption class="is-size-6 p-t-sm">
+                                    January 11th ~ 13th, 2019
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
-        <a href="#about-us" id="arrow-down" class="icon center arrow-bounce smooth-scroll">
-            <i class="fas fa-chevron-circle-down fa-2x"></i>
-        </a>
     </section>
 
     <%= require('html-loader!../partials/footer.html') %>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/min/tiny-slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            gutter: 9,
+            speed: 500,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            controls: false,
+            nav: false,
+            swipeAngle: false
+        });
+    </script>
 </body>
 
 </html>

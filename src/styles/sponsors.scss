@@ -1,14 +1,10 @@
 // sponsors.scss
 @import 'reuseable_styling';
 
-// Animations
-$use-fadeIn: true;
-$use-fadeInUp: true;
-$use-fadeInLeft: true;
-$use-fadeInUp: true;
-$use-fadeInDown: true;
-
 // Sponsor section CSS
+.columns.is-gapless:not(:last-child) {
+    margin-bottom: 7px;
+}
 .button-group button {
     background: transparent;
     border-width: 0px;
@@ -96,7 +92,3 @@ $use-fadeInDown: true;
 .navbar-menu {
     background-color: $main-color;
 }
-
-// Import only what you need from Bulma
-@import "../../node_modules/bulma-divider/src/sass/index.sass";
-@import "../../node_modules/bulma/sass/grid/tiles.sass";

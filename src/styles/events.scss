@@ -1,18 +1,18 @@
 // events.scss
 @import 'reuseable_styling';
 
-// Team CSS
-.shadow_title {
-    box-shadow: inset 0 -6px 0 rgb(247, 213, 73);
+.navbar.is-dark {
+    background-color: $main-color;
 }
-.card-content {
-    cursor: text;
+.title,
+.subtitle {
+    color: whitesmoke;
 }
-#back-to-top:hover,
-#back-to-top:active {
-	color: $main-color;
-	background-color: whitesmoke;
+figcaption {
+    color: rgb(177, 177, 177);
+}
+#showModal {
+    z-index: 1000;
 }
 
-// Import only what you need from Bulma
-@import "../../node_modules/bulma/sass/components/card.sass";
+@import '../../node_modules/bulma/sass/components/modal.sass';
