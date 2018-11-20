@@ -14,7 +14,7 @@
         <div class="hero-body">
             <div class="container has-background-white">
                 <p id="contact-title" class="m-b-lg">Send Us A <span class="shadow">Message</span></p>
-                <form method="POST" action="#">
+                <form action="https://formspree.io/your@email.com" method="POST">
                     <div class="field is-horizontal">
                         <div class="field-body">
                             <div class="field">
@@ -26,7 +26,7 @@
                             <div class="field">
                                 <label class="label">Email</label>
                                 <div class="control">
-                                    <input class="input" type="email" name="email" placeholder="Enter your email address" required>
+                                    <input class="input" type="email" name="_replyto" placeholder="Enter your email address" required>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                         <div class="field">
                             <label class="label">Message</label>
                             <div class="control">
-                                <textarea class="textarea" placeholder="Your message here..."></textarea>
+                                <textarea class="textarea" name="message" placeholder="Your message here..."></textarea>
                             </div>
                         </div>
                     </div>

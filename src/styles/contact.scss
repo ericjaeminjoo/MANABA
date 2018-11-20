@@ -44,12 +44,12 @@ textarea:focus {
     text-decoration: none;
     letter-spacing: 1px;
     color: $main-color;
-    background-color: hsl(56, 100%, 65%);
+    background-color: hsl(54, 100%, 65%);
     box-shadow: 0 10px 30px 0px rgba(255, 237, 75, 0.5);
     padding: 1.3rem 1.2rem;
     letter-spacing: 0.8px;
     border-radius: 2rem;
-    border-color: hsl(56, 100%, 65%);
+    border-color: hsl(54, 100%, 65%);
 }
 #social-media-container {
     color: hsl(0, 0%, 60%);
@@ -61,7 +61,7 @@ textarea:focus {
     }
     a:hover {
         transition: all 0.3s;
-        color: hsl(56, 100%, 65%);
+        color: hsl(54, 100%, 65%);
     }
 }
 
