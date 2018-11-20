@@ -1,3 +1,73 @@
-h1 {
-    color: blue;
+// events.scss
+@import 'reuseable_styling';
+
+// Contact form CSS
+.container {
+    padding: 4rem 10rem;
+    border-radius: 0.8rem;
 }
+#contact-title {
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+.field .label {
+    font-weight: 400;
+}
+.control .input,
+.control .textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $grey-lighter;
+    transition: all 0.5s;
+    box-shadow: none;
+    border-radius: 0;
+    &:hover {
+        border-color: $grey;
+    }
+
+    &:active, &:focus {
+        border-color: $sub-color;
+    }
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+textarea:focus {
+    box-shadow: none !important;
+}
+#send-btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: $main-color;
+    background-color: hsl(56, 100%, 65%);
+    box-shadow: 0 10px 30px 0px rgba(255, 237, 75, 0.5);
+    padding: 1.3rem 1.2rem;
+    letter-spacing: 0.8px;
+    border-radius: 2rem;
+    border-color: hsl(56, 100%, 65%);
+}
+#social-media-container {
+    color: hsl(0, 0%, 60%);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    a {
+        color: hsl(58, 52%, 11%);
+    }
+    a:hover {
+        transition: all 0.3s;
+        color: hsl(56, 100%, 65%);
+    }
+}
+
+// Import Bulma elements
+@import '../../node_modules/bulma/sass/elements/form.sass';
+@import '../../node_modules/bulma/sass/grid/columns.sass';
+
+// Import Hover.css package
+@import "../../node_modules/hover.css/scss/hover.scss";

@@ -4,10 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MANABA - Contact Page</title>
+    <title>MANABA - Main Page</title>
 </head>
+
 <body>
-    <h1>Contact Us</h1>
+    <section id="home" class="hero is-fullheight">
+        <%= require('html-loader!../partials/navbar_other.html') %>
+
+        <div class="hero-body">
+            <div class="container has-background-white">
+                <p id="contact-title" class="m-b-lg">Send Us A <span class="shadow">Message</span></p>
+                <form method="POST" action="#">
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <label class="label">Your Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" name="name" placeholder="Enter your name" required autofocus>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" name="email" placeholder="Enter your email address" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-body m-t-xl">
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Your message here..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control m-t-lg hvr-bob hvr-icon-forward">
+                        <button type="submit" id="send-btn">
+                            Send message <i class="fas fa-long-arrow-alt-right hvr-icon"></i>
+                        </button>
+                    </div>
+                </form>
+                <p id="social-media-container" class="m-t-lg">
+                    Follow our social media outlets:
+                    <a href="https://www.facebook.com/manabamcgill/"><i class="fab fa-facebook-square fa-2x hvr-rotate m-l-sm m-r-sm"></i></a>
+                    <a href="https://www.instagram.com/manaba.mcgill/"><i class="fab fa-instagram fa-2x hvr-rotate m-l-sm m-r-sm"></i></a>
+                    <a href="https://www.snapchat.com/add/manabamcgill/"><i class="fab fa-snapchat-square fa-2x hvr-rotate m-l-sm m-r-sm"></i></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <%= require('html-loader!../partials/footer.html') %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 </body>
 
 </html>

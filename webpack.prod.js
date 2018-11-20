@@ -13,7 +13,6 @@ module.exports = {
     devtool: "source-map",
     entry: {
         index: "./src/home-page/home.js",
-        about: "./src/about-page/about.js",
         contact: "./src/contact-page/contact.js",
         events: "./src/events-page/events.js",
         team: "./src/team-page/team.js",
@@ -86,12 +85,6 @@ module.exports = {
             inject: "body",
             chunks: ["index"],
             filename: "index.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/about-page/about.html",
-            inject: "body",
-            chunks: ["about"],
-            filename: "about.html"
         }),
         new HtmlWebpackPlugin({
             template: "./src/contact-page/contact.html",
