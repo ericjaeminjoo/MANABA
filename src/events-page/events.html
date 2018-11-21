@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section id="home" class="hero is-fullheight">
+    <section id="home" class="hero is-fullheight has-animated-bg">
         <%= require('html-loader!../partials/navbar_other.html') %>
 
         <div class="hero-body">
@@ -45,9 +45,8 @@
                 </div>
             </div>
         </div>
+        <%= require('html-loader!../partials/footer.html') %>
     </section>
-
-    <%= require('html-loader!../partials/footer.html') %>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -61,7 +60,7 @@
             gutter: 9,
             speed: 500,
             autoplay: true,
-            autoplayTimeout: 3500,
+            autoplayTimeout: 4500,
             autoplayButtonOutput: false,
             mouseDrag: true,
             controls: false,

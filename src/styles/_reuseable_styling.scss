@@ -39,6 +39,33 @@ $warning: $snapchat-color;
     -webkit-box-shadow: inset 0 -6px 0 rgb(247, 213, 73);
             box-shadow: inset 0 -6px 0 rgb(247, 213, 73);
 }
+.has-animated-bg {
+    background: linear-gradient(131deg, #1a1919, #f7d549, #3b5999, #e4405f);
+    background-size: 800% 800%;
+
+    -webkit-animation: background-gradient 30s ease infinite;
+    -moz-animation: background-gradient 30s ease infinite;
+    animation: background-gradient 30s ease infinite;
+
+    @-webkit-keyframes background-gradient {
+        0%{background-position:5% 0%}
+        50%{background-position:96% 100%}
+        100%{background-position:5% 0%}
+    }
+    @-moz-keyframes background-gradient {
+        0%{background-position:5% 0%}
+        50%{background-position:96% 100%}
+        100%{background-position:5% 0%}
+    }
+    @keyframes background-gradient {
+        0%{background-position:5% 0%}
+        50%{background-position:96% 100%}
+        100%{background-position:5% 0%}
+    }
+}
+footer {
+    background-color: transparent !important;
+}
 
 // Navbar CSS
 .navbar-menu a {

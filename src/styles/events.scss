@@ -1,15 +1,8 @@
 // events.scss
 @import 'reuseable_styling';
 
-.navbar.is-dark {
-    background-color: $main-color;
-}
 .title,
-.subtitle {
+.subtitle,
+figcaption {
     color: whitesmoke;
 }
-figcaption {
-    color: rgb(177, 177, 177);
-}
-
-@import '../../node_modules/bulma/sass/components/modal.sass';
