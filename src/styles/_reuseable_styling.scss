@@ -44,15 +44,9 @@ $warning: $snapchat-color;
     background-size: 800% 800%;
 
     -webkit-animation: background-gradient 30s ease infinite;
-    -moz-animation: background-gradient 30s ease infinite;
     animation: background-gradient 30s ease infinite;
 
     @-webkit-keyframes background-gradient {
-        0%{background-position:5% 0%}
-        50%{background-position:96% 100%}
-        100%{background-position:5% 0%}
-    }
-    @-moz-keyframes background-gradient {
         0%{background-position:5% 0%}
         50%{background-position:96% 100%}
         100%{background-position:5% 0%}
@@ -136,7 +130,8 @@ footer {
 #special-hover p:after {
     content: " and smol helper Emily Dang & noodle";
     opacity: 0;
-    transition: all 0.4s;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
 }
 #special-hover:hover p:after{
     opacity: 1;
