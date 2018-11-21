@@ -95,6 +95,10 @@ footer {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
 }
+.navbar-menu a:hover,
+a:active {
+    font-weight: bold;
+}
 
 // Footer CSS
 footer {
