@@ -133,8 +133,13 @@ footer {
 	color: whitesmoke;
 	background-color: $main-color;
 }
-#special-hover:hover p:after{
+#special-hover p:after {
     content: " and smol helper Emily Dang & noodle";
+    opacity: 0;
+    transition: all 0.4s;
+}
+#special-hover:hover p:after{
+    opacity: 1;
     font-size: 10px;
 }
 
