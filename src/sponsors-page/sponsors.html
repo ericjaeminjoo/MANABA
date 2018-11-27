@@ -16,10 +16,21 @@
                 <h1 class="is-size-3 m-b-lg">
                     OUR <strong><span class="shadow">SPONSORS</span></strong>
                 </h1>
-                <div class="center">
-                    <figure class="image">
-                        <img src="<%= require('../assets/sponsor-images/membership-card.png') %>" alt="Membership Card Photo">
-                    </figure>
+                <div class="center membership-card">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <figure class="image">
+                                    <img src="<%= require('../assets/sponsor-images/membership-card-front.png') %>" alt="Membership Card Front Photo">
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <figure class="image">
+                            <img src="<%= require('../assets/sponsor-images/membership-card-back.png') %>" alt="Membership Card Back Photo">
+                        </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <p class="subtitle is-size-6">
                     the membership card (2018-2019) costs $5
