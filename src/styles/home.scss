@@ -102,6 +102,10 @@ figcaption {
 #snapchat-icon {
     color: $snapchat-color;
 }
+// FAQ CSS
+.accordion-header {
+  cursor: pointer;
+}
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma-divider/src/sass/index.sass";
