@@ -145,15 +145,8 @@ footer {
 	color: whitesmoke;
 	background-color: $main-color;
 }
-#special-hover p:after {
+#special-hover:hover:after {
     content: " and smol helper Emily Dang & noodle";
-    opacity: 0;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
-}
-#special-hover:hover p:after{
-    opacity: 1;
-    font-size: 8px;
 }
 
 // Import Bulma componenets
