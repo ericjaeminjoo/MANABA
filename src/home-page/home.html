@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MANABA - Main Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/tiny-slider.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130111475-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130111475-1');
+    </script>
 </head>
 
 <body>
@@ -328,7 +338,15 @@
             mouseDrag: true,
             controls: false,
             nav: false,
-            swipeAngle: false
+            swipeAngle: false,
+            responsive: {
+                350: {
+                items: 1
+                },
+                500: {
+                items: 2
+                }
+            }
         });
     </script>
 </body>

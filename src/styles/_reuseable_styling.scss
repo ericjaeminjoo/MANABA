@@ -80,6 +80,9 @@ footer {
 .navbar-menu a {
     letter-spacing: 0.7px;
 }
+.navbar-burger:hover {
+    background-color: transparent !important;
+}
 .navbar-menu a::before {
     content: '';
     display: block;

@@ -21,6 +21,12 @@ $(document).ready(function () {
 
     // accordions now contains an array of all Accordion instances
     var accordions = bulmaAccordion.attach();
+
+    // Navbar JS
+    $(".navbar-burger").click(function() {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    });
 });
 
 // Counter function for number values
