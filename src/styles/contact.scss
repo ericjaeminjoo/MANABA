@@ -76,6 +76,15 @@ textarea:focus {
     }
 }
 
+/* Small phones to small tablets: fom 0px to 767px */
+@media only screen and (max-width: 767px) {
+    // Contact form CSS
+    .container {
+        padding: 2.5rem 3rem;
+        border-radius: 0.8rem;
+    }
+}
+
 // Import Bulma elements
 @import '../../node_modules/bulma/sass/elements/form.sass';
 @import '../../node_modules/bulma/sass/grid/columns.sass';
