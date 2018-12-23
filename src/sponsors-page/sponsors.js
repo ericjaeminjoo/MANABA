@@ -2,6 +2,15 @@ require("normalize.css/normalize.css");
 require("../styles/sponsors.scss");
 require("../styles/spacing.scss");
 
+$(document).ready(function() {
+    // Navbar JS
+    $(".navbar-burger").click(function() {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    });
+});
+
+
 $(window).on('load', function() {
     // init Isotope
     var $grid = $('.grid').isotope({
