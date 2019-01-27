@@ -145,8 +145,13 @@ footer {
 	color: whitesmoke;
 	background-color: $main-color;
 }
-#special-hover:hover:after {
-    content: " and smol helper Emily Dang & noodle";
+
+#linkedin {
+    color: inherit;
+}
+#linkedin:hover,
+#linkedin:active {
+    color: #e4405f;
 }
 
 /* Small phones to small tablets: fom 0px to 767px */
