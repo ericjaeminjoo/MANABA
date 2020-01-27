@@ -8,7 +8,7 @@
 	A fully-responsive website I developed from scratch as webmaster for MANABA @ <a href='manaba.ca'>manaba.ca</a>.
 </p>
 <p align="center">
-	Built using HTML, CSS, JavaScript, jQuery, <a href='https://bulma.io/'>Bulma CSS Framework</a>, Webpack & hosted with Netlify
+	Built using HTML, CSS, JavaScript, jQuery, <a href='https://bulma.io/'>Bulma CSS Framework</a>, Webpack & hosted with <a href='http://netlify.com/'>Netlify</a>
 </p>
 <p align="center">
     <a href="https://bulma.io">
@@ -22,11 +22,32 @@
 ## ❗️Prerequisites
 
 -   [Node.js](https://nodejs.org/) version 7.6.x or above
+-   [npm](https://www.npmjs.com/get-npm)
 
-## 🛠 Installation & Setup
+## 🛠 Installation
 
-1. Install dependencies fdf
+-   Install npm dependencies
 
 ```sh
 npm install
+```
+
+## 🚀 Building and Running for Production
+
+-   To start the development server
+
+```sh
+npm run start
+```
+
+-   To build for production to prepare `html`, `css`, `js` files in `dist/` directory
+
+```sh
+npm run build
+```
+
+-   To preview the production build
+
+```sh
+npm run preview
 ```
