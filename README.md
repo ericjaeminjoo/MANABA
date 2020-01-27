@@ -5,16 +5,18 @@
 	McGill Association of North American Born Asians (MANABA)
 </h1>
 <p align="center">
-	A fully-responsive website I developed from scratch as webmaster for MANABA @ <a href='manaba.ca'>manaba.ca</a>.
+	A fully-responsive website I developed from scratch as webmaster for MANABA @ <a href='manaba.ca' target="_blank">manaba.ca</a>.
 </p>
 <p align="center">
-	Built using HTML, CSS, JavaScript, jQuery, <a href='https://bulma.io/'>Bulma CSS Framework</a>, Webpack & hosted with <a href='http://netlify.com/'>Netlify</a>
+	Built using HTML, CSS, JavaScript, jQuery, <a href='https://bulma.io/' target="_blank">Bulma CSS Framework</a>, Webpack & hosted with <a href='http://netlify.com/' target="_blank">Netlify</a>
 </p>
 <p align="center">
-    <a href="https://bulma.io">
-        <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="128" height="24">
+    <a href="https://app.netlify.com/sites/manaba/deploys" target="_blank">
+        <img src="https://api.netlify.com/api/v1/badges/a953c3b2-3086-4ada-8c7d-f9e9dd8732e2/deploy-status" alt="Netlify Status"/>
     </a>
-
+    <a href="https://bulma.io" target="_blank">
+        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+    </a>
 </p>
 
 ![Website Demo](demo.gif)
