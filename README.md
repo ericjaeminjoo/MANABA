@@ -8,7 +8,7 @@
 	A fully-responsive website I developed from scratch as webmaster for MANABA @ <a href='manaba.ca' target="_blank">manaba.ca</a>.
 </p>
 <p align="center">
-	Built using HTML, CSS, JavaScript, jQuery, <a href='https://bulma.io/' target="_blank">Bulma CSS Framework</a>, Webpack & hosted with <a href='http://netlify.com/' target="_blank">Netlify</a>
+	Built using HTML, CSS/SASS, JavaScript, jQuery, <a href='https://bulma.io/' target="_blank">Bulma CSS Framework</a>, Webpack & hosted with <a href='http://netlify.com/' target="_blank">Netlify</a>
 </p>
 <p align="center">
     <a href="https://app.netlify.com/sites/manaba/deploys" target="_blank">
