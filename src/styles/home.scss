@@ -1,5 +1,5 @@
 // home.scss
-@import "reuseable_styling";
+@import 'reuseable_styling';
 
 // Animations
 $use-fadeIn: true;
@@ -10,122 +10,127 @@ $use-fadeInDown: true;
 
 // Arrow-down CSS
 #arrow-down {
-    color: $sub-color;
-    margin-bottom: 40px;
+  color: $sub-color;
+  margin-bottom: 40px;
 }
 .arrow-bounce {
-    -moz-animation: arrow-bounce 3s infinite;
-    -webkit-animation: arrow-bounce 3s infinite;
-    animation: arrow-bounce 3s infinite;
+  -moz-animation: arrow-bounce 3s infinite;
+  -webkit-animation: arrow-bounce 3s infinite;
+  animation: arrow-bounce 3s infinite;
 }
 @-moz-keyframes arrow-bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -moz-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -moz-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 @-webkit-keyframes arrow-bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 @keyframes arrow-bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -moz-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 // Image figure caption CSS
 figcaption {
-    color: $fig-color;
-    letter-spacing: 0.7px;
+  color: $fig-color;
+  letter-spacing: 0.7px;
 }
 // Sponsors Button CSS
 #sponsor-btn {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: $main-color;
-    background-color: hsl(340, 65.9%, 82.7%);
-    -webkit-box-shadow: 0 10px 30px 0px rgba(240, 182, 201, 0.5);
-    box-shadow: 0 10px 30px 0px rgba(240, 182, 201, 0.5);
-    padding: 1.3rem 1.2rem;
-    letter-spacing: 0.8px;
-    border-radius: 2rem;
-    border-color: hsl(340, 65.9%, 82.7%);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: $main-color;
+  background-color: hsl(340, 65.9%, 82.7%);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(240, 182, 201, 0.5);
+  box-shadow: 0 10px 30px 0px rgba(240, 182, 201, 0.5);
+  padding: 1.3rem 1.2rem;
+  letter-spacing: 0.8px;
+  border-radius: 2rem;
+  border-color: hsl(340, 65.9%, 82.7%);
 }
 // Tag container CSS to center tags
 .tag-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 // Social media icon colors
 #facebook-icon {
-    color: $facebook-color;
+  color: $facebook-color;
 }
 #instagram-icon {
-    color: $instagram-color;
+  color: $instagram-color;
 }
 #snapchat-icon {
-    color: $snapchat-color;
+  color: $snapchat-color;
 }
 // FAQ CSS
 .accordion-header {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+// Over-ride default padding
+.hero {
+  padding: 0 80px;
 }
 
 // Import only what you need from Bulma
-@import "../../node_modules/bulma-divider/src/sass/index.sass";
-@import "../../node_modules/bulma/sass/elements/tag.sass";
-@import "../../node_modules/bulma-accordion/src/sass/index.sass";
+@import '../../node_modules/bulma-divider/src/sass/index.sass';
+@import '../../node_modules/bulma/sass/elements/tag.sass';
+@import '../../node_modules/bulma-accordion/src/sass/index.sass';
 
 // Import Hover.css package
-@import "../../node_modules/hover.css/scss/hover.scss";
+@import '../../node_modules/hover.css/scss/hover.scss';
 
 // Import Animate.css package
-@import "../../node_modules/animate-sass/animate.scss";
+@import '../../node_modules/animate-sass/animate.scss';
